@@ -8,7 +8,7 @@
 using namespace std;
 
 
-long double f(long double x, long double y) { 
+long double f(long double x, long double y) {
 	long double u = 0.1/0.25;
 	return -2 * y / ( u * sqrt(1 + pow(y, 2)));
 }
@@ -34,6 +34,6 @@ int main()
 	Euler1D(func, y0, N, x, y);
 
 	int k = 4;
-	cout << "x[3] = " << x[k] << "\n";
-	cout << "y[3] = " << y[k] << "\n";
+	// cout << "x[3] = " << x[k] << "\n";
+	// cout << "y[3] = " << y[k] << "\n";
 }
