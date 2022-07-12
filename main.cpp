@@ -32,8 +32,9 @@ int main()
 	long double (*func)(long double, long double) = &f;
 
 	Euler1D(func, y0, N, x, y);
+	// RungeKutta(func, y0, N, x, y);
 
-	int k = 4;
-	// cout << "x[3] = " << x[k] << "\n";
-	// cout << "y[3] = " << y[k] << "\n";
+	for (const auto& e : y) {
+		std::cout << e << std::endl;
+	}
 }
